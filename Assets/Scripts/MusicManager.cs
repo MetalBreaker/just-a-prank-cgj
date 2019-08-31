@@ -15,7 +15,7 @@ public class MusicManager : MonoBehaviour
     {
         if (!_audio.isPlaying)
         {
-            _audio.clip = Music[Random.Range(0, Music.Count - 1)];
+            _audio.clip = Music[Random.Range(0, Music.Count)];
             _audio.Play();
         }
     }

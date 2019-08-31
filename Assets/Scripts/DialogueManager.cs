@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
 
     public bool DialogueCompleted = false;
 
+    string s = "";
+
     void Awake ()
     {
         if (Instance != null && Instance != this)
@@ -41,7 +43,7 @@ public class DialogueManager : MonoBehaviour
 		{
             for (int i = 0; i < lw.Text.Count; i++)
             {
-                string s = lw.Text[i];
+                s = lw.Text[i];
                 Text.SetText(s);
                 CharHead.sprite = lw.HeadImage[Mathf.Min(lw.HeadImage.Count - 1, i)];
                 while (Text.maxVisibleCharacters < s.Length)
@@ -57,4 +59,10 @@ public class DialogueManager : MonoBehaviour
         PlayerController.Player.PlayerControllable = true;
         DialogueCompleted = true;
 	}
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+            Text.maxVisibleCharacters = s.Length;
+    }
 }
