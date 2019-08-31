@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3364,11 +3364,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4727133294073356406, guid: 8dd8e8b97617cf74c8c04bd9f2cc7b60,
-        type: 3}
-      propertyPath: Canvas
-      value: 
-      objectReference: {fileID: 2042897229}
     - target: {fileID: 3403067333863305541, guid: 8dd8e8b97617cf74c8c04bd9f2cc7b60,
         type: 3}
       propertyPath: m_Name
@@ -3429,6 +3424,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4727133294073356406, guid: 8dd8e8b97617cf74c8c04bd9f2cc7b60,
+        type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 2042897229}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd8e8b97617cf74c8c04bd9f2cc7b60, type: 3}
 --- !u!1001 &7906620558102030568
@@ -3641,13 +3641,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3409022122078823539, guid: 09a140ec9b3c1f54da7537a43b24c2ba,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7532913424373807497, guid: 09a140ec9b3c1f54da7537a43b24c2ba, type: 3}
-    - {fileID: 3347578152390113906, guid: 09a140ec9b3c1f54da7537a43b24c2ba, type: 3}
-    - {fileID: 4936196968873755895, guid: 09a140ec9b3c1f54da7537a43b24c2ba, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09a140ec9b3c1f54da7537a43b24c2ba, type: 3}
